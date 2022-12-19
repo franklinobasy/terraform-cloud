@@ -27,7 +27,7 @@ ami = "ami-0b0af3577fe5e3532"
 keypair = "devops"
 
 # Ensure to change this to your acccount number
-account_no = "576440278504"
+account_no = "047051162952"
 
 master-username = "franklin"
 
