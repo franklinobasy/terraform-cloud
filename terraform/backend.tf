@@ -7,3 +7,15 @@
 #     encrypt        = true
 #   }
 # }
+
+terraform {
+  
+  backend "remote" {
+    organization = "FO"
+
+    workspaces {
+        name =  "terraform-cloud"
+
+    }
+  }
+}
