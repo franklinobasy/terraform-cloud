@@ -1,6 +1,6 @@
 region = "us-east-1"
 
-vpc_cidr = "172.16.0.0/16" 
+vpc_cidr = "10.0.0.0/16" 
 
 enable_dns_support = "true" 
 
@@ -22,7 +22,13 @@ tags = {
 
 environment = "production"
 
-ami = "ami-0b0af3577fe5e3532"
+ami-web = "ami-02b14f5d0b1ebe7f3"
+
+ami-bastion = "ami-044205c79ad2733c5"
+
+ami-nginx = "ami-09e746f26a0dff354"
+
+ami-sonar = "ami-0b80779abe33fcd62"
 
 keypair = "devops"
 
