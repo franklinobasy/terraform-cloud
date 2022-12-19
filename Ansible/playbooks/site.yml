@@ -1,0 +1,25 @@
+---
+- hosts: tag_Name_FO_nginx
+- name: nginx assignment
+  import_playbook: ../static-assignments/nginx.yml
+
+- hosts: tag_Name_FO_tooling 
+- name: tooling assignment
+  import_playbook: ../static-assignments/tooling.yml
+
+- hosts: tag_Name_FO_wordpress_asg
+- name: wordpress assignment
+  import_playbook: ../static-assignments/wordpress.yml
+
+- hosts: tag_Name_FO_Jenkins
+- name: jenkins assignment
+  import_playbook: ../static-assignments/jenkins.yml  
+
+- hosts: tag_Name_FO_artifactory
+- name: artifactory assignment
+  import_playbook: ../static-assignments/jfrog.yml
+
+- hosts: tag_Name_FO_sonbarqube
+  user: ubuntu
+- name: sonbarqube assignment
+  import_playbook: ../static-assignments/sonar.yml
